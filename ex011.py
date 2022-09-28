@@ -7,7 +7,7 @@ lst =[554]
 
 for i in range(random.randint(5,10)):#сколько чисел в списке
     x = random.randint(500,600)#рандомные числа
-    lst.append(x)#добовляем переменную в список
+    lst.append(x)#добовляем переменную в конец списка 
 
 print(lst)
 random.shuffle(lst)#перемешиваем список 
