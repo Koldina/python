@@ -15,6 +15,6 @@ print(lst)
 
 for i in lst:#проходим циклом по массиву
     if i %2 != 0:
-        print(i, 'нечетное число')
+        print(i, end = ' ')#end для записи в строку
     if i == 554:
         break
