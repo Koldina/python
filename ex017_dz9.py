@@ -15,9 +15,9 @@ f = open('file_dz9.txt')#открываем файл
 ind1 = int(f.read(1))#считываем позицию 1
 ind2 = int(f.read(2))#считываем позицию 2
 f.close()#закрываем файл
-print(f'Indexes from file.txt: {ind1}, {ind2}')#jоткрываем файл
+print(f'Indexes from file.txt: {ind1}, {ind2}')#выводим числа
 
-mult = lst[ind1]*lst[ind2]
-print(mult)
+result = lst[ind1]*lst[ind2]
+print(result)
 
 
