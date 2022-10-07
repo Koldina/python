@@ -14,8 +14,15 @@ print(result)
 
 #Расчёт пи через функцию
 import math
+#1 вар - округление
 pi = math.pi
 print (pi)
 print (round(pi,result))# округление до нужного значения
+
+
+#2 вар - обрез - не работает
+#pi = str(math.pi)
+#print (pi)
+#print(pi[:result]) 
 
 
