@@ -4,9 +4,8 @@
 import random
 lst1 =[]
 for i in range(random.randint(5,10)):#сколько чисел в списке
-    x = random.randint(500,600)#рандомные числа
+    x = random.randint(1,6)#рандомные числа
     lst1.append(x)#добовляем переменную в конец списка 
-
 
 print(lst1)
 lst2 = []
@@ -21,3 +20,10 @@ lst2 = []
 #2вариант
 [lst2.append(i) for i in lst1 if i not in lst2]
 print(f"Список из неповторяющихся элементов: {lst2}")
+
+#3 вариант - исключает повторяющиеся элементы
+#count = 0
+#for i in lst1:
+#    if lst1.count(i) == 1:
+#        lst2.append(i)
+#print(lst2)
