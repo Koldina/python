@@ -2,13 +2,13 @@
 #состоящий из элементов последовательности 3n + 1.
 #{1: 4, 2: 7, 3: 10, 4: 13, 5: 16, 6: 19} - не получается скобки поставить)
 
-
+""" Рабочий вариант
 list = {}
 number = int(input('Введите число: '))
 for i in range(1,number+1):
     result = 3 * i + 1
     list[i] = result# словарь индекс - значение
 print(f'Полученный список: {list}')
-
-
-#print(list(map(lambda i: i = 3 * i + 1 )))
+"""
+number = int(input('Введите число: '))
+print(list([3 * i + 1 for i in range(1,number+1)]))
