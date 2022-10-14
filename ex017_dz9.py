@@ -7,9 +7,10 @@ import random
 
 n = int(input('Введите N: '))
 lst = []#создаём список
-for i in range(1, n + 1): 
-    lst.append(random.randint(-n,n))#добавляем рандомные значения в диапазоне
-print(lst)
+#for i in range(1, n + 1): 
+#    lst.append(random.randint(-n,n))#добавляем рандомные значения в диапазоне
+#print(lst)
+print(list([random.randint(-n,n) for i in range(1,n+1)]))
 
 f = open('file_dz9.txt')#открываем файл
 ind1 = int(f.read(1))#считываем позицию 1
